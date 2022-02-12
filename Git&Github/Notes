@@ -1,0 +1,38 @@
+cd - change directory
+mkdir - make directory
+ls - list
+touch - create a file
+At Desktop
+mkdir project
+cd project
+ls
+touch file.txt
+
+
+I have this project folder now i want to maintain the 
+history of this project using git.
+The entire history(I create a new file, make changes, delete some file)
+all history gets stored in .git(git-repositry(folder))
+.file All are hidden
+so for that initilaize a empty git repositry(folder)
+After intialzing .git folder gets created in project folder
+so all the changes we are going to make in the project
+folder will be tracked by this .git folder i.e hidden
+
+we can see this hidden folder by -> ls -a
+
+Now we will be able to maintain the history of this project directory any change made in this project now git will pick it up
+
+touch file.txt
+ git status will show
+ git status(these are the changes that are not currently in the history of this project)
+ A file.txt has been added and it is currently untracked
+
+
+ 1->
+ mkdir project
+ cd project
+touch file.txt
+git status
+git add .
+git commit -m "my-first-commit"
