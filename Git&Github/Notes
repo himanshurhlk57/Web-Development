@@ -5,9 +5,22 @@ touch - create a file
 At Desktop
 mkdir project
 cd project
+cd (home)
+cd .. (back)
 ls
-touch file.txt
+touch file.txt (create a file)
+cat file.txt (display whatever is there in file.txt)
 
+
+want to write something in file.txt
+vm file.txt
+i to start writing
+esc :q to exit 
+esc :wq save and exit
+3 insertion has been made -> 3 lines of code has been added
+
+undo git init
+rm -rf .git
 
 I have this project folder now i want to maintain the 
 history of this project using git.
@@ -28,11 +41,166 @@ touch file.txt
  git status(these are the changes that are not currently in the history of this project)
  A file.txt has been added and it is currently untracked
 
+ to unstage -> 
+ changed something in file.txt now it is untracked 
+ if i mistankely did git add .
+ now file.txt is in staging area i want it to unstage for that
+  git restore --staged file.txt
+  git -rf file.txt (delete the file.txt)
+
+If i mistakenly deleted some file it will be in the history of git we can seee it by git log
+/*
+Each commit has a hash id, each commit is built on each other so you can't delete a commit n betwwen 
+
+whatever commit hashcode i copy all the commit above its will be removed
+
+git reset hashcode
+
+the commit above this hashcode will be removed
+all the commits get removed are in the unstage area
+
+git statsh->
+created two txt file in project folder
+add some text
+did git add .
+they are in staging area
+made some changes in the txt file by adding some text 
+but i dont want to loose this changes also dont want to commit this right now basically want to send them backstage and whenever i need them i will call them
+for that i need to have one intial commit next time
+before commiting i can do
+git add .
+git stash
+
+if i do cat file.txt -> hello
+
+if the people in the backstage are i dont want they comeback i have changed my mind i can do 
+git stash clear
+ now they will never come back
+
+git stash pop -> all the people in the backstage come in the staging area
+cat file.txt -> hello again
+
+
+git remote add origin link
+remote - working with urls
+add - you are adding a url
+origin - name of the url you are going to add
+
+* branch
+git branch newBranch 
+git checkout newBranch
+
+AFter checkout the * thing that was on main is now on newBranch
+head is just a pointer that say all the commits you will 
+made will be added on the head.
+head the branch it is pointing to at that time.
+
+now merge both the branch
+
+git merge newBranch
+
+* Make some changes to the project or contribute to
+the existing project on github/gitlab
+
+first fork it (make copy of it)
+git clone url
+from where you have forked this project forkedProjectUrl is known as upstreamUrl
+git remote add upstream url
+origin is my personal, upstream is from where i have forked it
+
+Pull request
+modified something in the exisitng code bas of cloned project
+Now i want to commit that changes but i will not commit
+in the main branch instead will create a new branch switch
+to that brancha and commit in that branch
+
+whatever code i have in mycode of newBranch
+merge it with the main branch of original code
+
+when you create a copy of someone project whatever changes
+you make in your fork to get reflect in his project
+you request via pull request(PR)
+after making changes and commiting will push my newcode in
+newBranch a compare&PullRequest will popup
+now go to compare&PullRequest click and then create pull request
+a notification will be sent to samar to merge
+after he will aprrove my new code will gets merged.
+
+Now if i make further changes and commit it it will not get
+me the option to again raise a new pr
+the commit will be show in the existing pr as a commit
+one branch can only open one pull request
+
+if i want to remove a commit from the existing pull request
+git log 
+hashcode pick that
+git reset hashcode
+
+i have made changes in my fork code in newBranch and
+merged my newBranch with same branch lets say 2 commit
+
+but my forked code main branch is behind 2 commit from my
+newBranch
+
+*****Squash commit in one single commit
+ created a file 
+ touch 1
+ git add .; git commit -m "1"
+ touch 2
+ git add .; git commit -m "2"
+
+i want to merge all this commit in one single commit
+
+
+***Merge conflict
+you changed in a file on line number 3 and someone else
+also made change in line number 3.
+Git will get confused should i take your changes or that
+person changes
+
+4-> 
+git log
+git fetch --all --prune (fetched all the changes)
+git checkout main
+git reset --hard upstream/main reset my main branch of the origin to the main branch of upstream
+git log
+git push origin main (to update newBranch to main branch i.e same level sync)
+
 
  1->
  mkdir project
  cd project
+ git init
 touch file.txt
 git status
 git add .
 git commit -m "my-first-commit"
+git log
+
+2-> Push to github from git bash
+cd workattech
+git init
+git add .
+git commit -m "Initial-commit"
+git remote add origin https://github.com/himanshurhlk57/Data-Structures-Algorithms.git
+git remote -v
+git branch -M main
+git push origin main / git push origin main --force
+
+if i made some change in the local directory and want that it should reflected on github too
+git add .
+git status
+git branch 
+git push origin main
+
+3->
+makeChanges
+git branch newBranch
+git checkout newBranch
+git add .
+git commit -m "commit in new branch"
+git push origin newBranch
+compare&PullRequest
+create pull request.
+
+*/

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+      /* Global font size for this page           */
+        html{
+font-size: 15px;
+        }
+
+        .container{
+            background-color: aquamarine;
+            text-align: center;
+            padding: 15px;
+            font-size: 50px;
+        }
+
+        .text{
+            font-size: 1em;
+        }
+
+        .container1{
+            background-color: rgb(24, 139, 101);
+            text-align: center;
+            padding: 15px;
+            font-size: 60px;
+        }
+
+        .text1{
+            font-size: 1rem;
+        }
+
+        h1{
+           text-align: center;
+        }
+
+        .type{
+            display: none; 
+            height: 10vh; 
+            font-size: 3rem;
+        }
+
+      @media (max-width: 500px){
+           .phone{
+              display: block;
+              background-color: blueviolet;
+          }
+      }
+  
+      @media (min-width: 501px) and (max-width: 700px){
+          .tablet{
+              display: block;
+              background-color: grey;
+          }
+      }
+
+      .blocks{
+          display: flex;
+      }
+
+      .block{
+          background-color: blueviolet;
+          width: 100px;
+          height: 100px;
+          margin: 10px;
+      }
+
+      @media (max-width: 700px){
+          .blocks{
+              flex-direction: column;
+          }
+      }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1>em</h1>
+    <p>The parent class named container inside that there is a class named text if we assign parent class font-size to 50px the text will be of size 50 px i.e same as assigning child class i.e text class font-size of 1em. If we assign font-size of 1.2 em to child class then the font size wil be 6opx as 50*1.2 = 60px </p>
+<p>If we have given .text font-size of 1em then it is with respect to its parent container</p>
+   <div class="container">
+       <div class="text">
+           Css Responsive tutorial
+       </div>
+   </div>
+
+
+   <h1>rem</h1>
+   <p>Firstly we assign a global font-size of 15px by html{
+       15px now if we assign font-size of 1rem to text1 class then it will set its font size with respect to root element i.e size of global font <br>
+       whereas it parent child i.e container1 has font-size of 60px that has no effect in its child class text size if we don font-size = 1em. then the font-size will be 60px
+   </p>
+      <div class="container1">
+          <div class="text1">
+              Css Responsive tutorial
+          </div>
+      </div>
+    
+      <h1>viewport width(vw)</h1>
+
+
+      <h1>viewport height(vh)</h1>
+      <br>    
+      <h1>Media Queries</h1>
+      <div class="type phone ">Phone</div>
+      <div class="type tablet">Tablet</div>
+
+
+      <div class="blocks">
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+          <div class="block"></div>
+      </div>
+
+</body>
+
+</html>

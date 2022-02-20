@@ -1,0 +1,73 @@
+
+// All three methods are present in the array in javascript
+
+// i -> forEach
+
+// forEach will give the value of array one by one
+// we can do whatever we want to to that with that value
+// forEach is a function of nums in which we passed a arrow function 
+
+// forEach will give one value from nums array and in that
+// function paramter we need to pass that value to an unnamed
+// or arrow function in this arrow function we can perform any operation
+
+let nums = [1,2,3,4];
+
+nums.forEach((n) => {
+
+console.log(n*n);
+
+});
+
+
+// ii -> Filter
+
+// filter is a method present in the array that gives
+// the filter value according to your logic
+// lets say from the given array you only want even Element
+
+let nums1 = [2,3,4,5,6];
+
+console.log(nums1.filter((n) => n%2 === 0 ));
+
+// once you got the filter value on the same value
+// now just print the even value one by one using forEach method
+
+let nums2 = [2,3,4,5,6];
+
+nums2.filter((n) => n%2 === 0)
+
+.forEach((n) => {
+    console.log(n);
+});
+
+
+// iii-> map
+// take a value and then change it
+// lets say after filtering the value i want to double the
+// filtered value and then print the value one by one using 
+// forEach method of Array.
+
+let nums3 = [2,3,4,5,6];
+
+nums3.filter((n) => n%2 === 0)
+
+.map((n) => n*2)
+
+.forEach((n) => {
+    console.log(n);
+});
+
+// iv -> reduce
+
+// want to sum the array Element
+
+let nums4 = [2,3,4,5,6];
+
+let result = nums4.filter((n) => n%2 === 0)
+
+.map((n) => n*2)
+
+.reduce((a,b) => a + b);
+
+console.log(result);
