@@ -1,3 +1,63 @@
+const nums = [1,2,3,4];
+
+// for loop method
+for(let i= 0; i<nums.length; i++){
+	console.log(nums[i]);
+}
+
+// forEach return number one by one based on the logic
+
+nums.forEach((num) => {
+	console.log(num);
+});
+
+//Print lastName one by one using forEach
+const person = [
+	{firstName: 'rohit', lastName: 'kumar'},
+	{firstName: 'rahul', lastName: 'kumar'},
+	{firstName: 'anand', lastName: 'kumar'}
+];
+
+person.forEach((person) => {
+	console.log(person.lastName);
+})
+
+// map return a new array based on our logic
+
+const mapArray = nums.map((num) => {
+	return num * 10;
+});
+
+console.log(nums);
+console.log(mapArray);
+
+// array of object in the object we have firstName and lastName we want to group firstName in the form of array for that we can use map
+
+const person1 = [
+	{firstName: 'rohit', lastName: 'kumar'},
+	{firstName: 'rahul', lastName: 'kumar'},
+	{firstName: 'anand', lastName: 'kumar'}
+];
+
+
+const firstName = person1.map((person1) => {
+	return person1.firstName;
+});
+console.log(firstName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // All three methods are present in the array in javascript
 

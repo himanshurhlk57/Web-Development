@@ -1,1 +1,1 @@
-Object
+console.log(age); 

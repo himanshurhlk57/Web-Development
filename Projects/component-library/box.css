@@ -1,0 +1,24 @@
+.box{
+    margin: 20px;
+    border: 10px solid black;
+    width: 160px;
+    background-color: brown;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    line-height: 20px;
+    padding: 70px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+
+
+/* .p{
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: scroll;
+    line-height: 20px;
+
+} */

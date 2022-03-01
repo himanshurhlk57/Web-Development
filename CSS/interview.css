@@ -1,0 +1,60 @@
+.outer-div{
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+   
+    position: relative;
+}
+
+.inner-div{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.outer1-div{
+    background-color:brown;
+    height: 400px;
+    width: 400px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+}
+
+.inner1-div{
+    background-color:blueviolet;
+    height: 200px;
+    width: 200px;
+    
+}
+
+.one{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+}
+
+.two{
+    background-color: rgb(162, 0, 255);
+    width: 100px;
+    height: 100px;
+}
+
+.three{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+    box-sizing: border-box;
+}

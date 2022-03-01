@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Align</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.4em;
+        }
+        .container{
+            max-width: 900px;
+            margin: 30px auto;
+        }
+        .box{
+          background: #fff;
+          border: 1px solid #333;
+          padding: 20px;
+          margin-bottom: 10px;
+          text-align: center;
+        }
+        #box-2{
+            float: left;
+            width: 68%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+        .clr{
+            clear: both;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="box-1" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio voluptatibus voluptate molestiae autem recusandae ratione natus optio exercitationem cum!</p>
+        </div>
+        
+        <div id="box-2" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio voluptatibus voluptate molestiae autem recusandae ratione natus optio exercitationem cum!</p>
+        </div>
+
+        <div id="box-3" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio voluptatibus voluptate molestiae autem recusandae ratione natus optio exercitationem cum!</p>
+        </div>
+
+        <div class="clr"></div>
+
+        <div id="box-4" class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio voluptatibus voluptate molestiae autem recusandae ratione natus optio exercitationem cum!</p>
+        </div>
+        
+    </div>
+
+</body>
+</html>
