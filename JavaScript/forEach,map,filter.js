@@ -22,6 +22,38 @@ person.forEach((person) => {
 	console.log(person.lastName);
 })
 
+
+const nums = [1,2,3,4];
+
+nums.forEach((nums) => {
+    console.log(nums);
+});
+
+const mapResult = nums.map((num) => {
+    return num * 10;
+});
+
+console.log(mapResult);
+
+const filterResult = nums.filter((num) => {
+    return num % 2 === 0;
+});
+
+console.log(filterResult);
+
+const findResult = nums.find((num) => {
+    return num % 2 === 0;
+});
+
+console.log(findResult);
+
+const reduceResult = nums.reduce((previous, num) => {
+    return previous + num;
+}, 0);
+
+console.log(reduceResult);
+
+
 // map return a new array based on our logic
 
 const mapArray = nums.map((num) => {

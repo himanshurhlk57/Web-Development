@@ -1,3 +1,80 @@
+A promise has two state either its gonna fulfilled
+or it is not gonna be fulfilled
+
+A promise is a event that might be fulfilling in the future or
+might be not
+// without promise
+
+const first = () => {
+	return "I am one";
+};
+
+const second = () => {
+	setTimeout(() => {
+		return "I am second";
+	}, 2000);
+};
+
+
+const third = () => {
+	return "I am third";
+};
+
+const callMe = () => {
+	let valueOne = first();
+	console.log(valueOne);
+
+	let valueTwo = second();
+	console.log(valueTwo);
+
+	let valueThree = third();
+	console.log(valueThree);
+}
+
+callMe();
+
+// with promise
+if we do async ( ) in second
+it will say there is a promise involved that is 
+not fulfilled
+
+const first = () => {
+	return "I am one";
+};
+
+const second = () => {
+	 return new Promise((resolve, reject) => {
+     setTimeout(() => {
+			 resolve ("I am two");
+		 }, 3000);
+	 });
+};
+
+
+const third = () => {
+	return "I am third";
+};
+
+const callMe = async () => {
+	let valueOne = first();
+	console.log(valueOne);
+
+	let valueTwo = await second();
+	console.log(valueTwo);
+
+	let valueThree = third();
+	console.log(valueThree);
+}
+
+callMe();
+
+
+
+
+
+
+
+
 // function login(){
 // 	setTimeout(() => {
 // 		console.log('Login');
