@@ -1,6 +1,15 @@
 // filter
 // return array of object based on our logic
 
+const nums = [1,2,3,4,5,6];
+
+const odd = nums.filter((num) => {
+   return num % 2 === 0;
+});
+
+console.log(odd);
+
+
 const persons = [
 	{name: 'rohit', gender: 'male'},
 	{name: 'sneha', gender: 'female'},

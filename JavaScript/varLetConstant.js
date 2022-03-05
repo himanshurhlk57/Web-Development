@@ -22,8 +22,23 @@ If the variable with var keyboard is not declared inside a function then it is a
 var is function scope
 whereas let and const are blocked scope any variable declared with let and const is actually a blocked scope
 
+Let and const are also hoisted but in different way
+they are in temporol zone in the time being
 
+let a = 10;
+var b = 100;
 
+/*
+before executing any line of code both a and b has assigned 
+undefined value in case of var it is in the global space 
+whereas in case of let and const they are also allocated memory
+but they are stored in the different space than global and
+you cant access these memory space or before putting any value in it
+after assigning value to let and const they are accessible
+*/
+
+*** Temporal deadzone is the time since let and const were hoisted
+till it get the value
 
 
 

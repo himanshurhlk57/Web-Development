@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <div>
+        <label for="text-input-1">Text Input field: </label>
+        <input type="text" id="text-input-1">
+    </div>
+  
+    <br>
+
+
+    <div>
+        <div>
+            <input type="button" id="button-1">
+        </div>
+        <br>
+     <div>
+        <input type="button" id="button-2" value="Click Me!">
+     </div>
+     <br>
+<div>
+    <input type="button" id="button-3" value="1">
+</div>
+<br>
+    </div>
+
+  <div>  <input type="button" id="btn" value="0">
+   </div>
+  
+
+    <script>
+    
+    const inputField = document.querySelector('#text-input-1');
+    console.log(inputField);
+
+    const button = document.querySelector('#btn');
+
+    button.addEventListener('click', (event) => {
+       event.target.value++;
+    });
+
+    // let count = 0;
+    // button.addEventListener('click', (event) => {
+    //     count++;
+    //    event.target.value = count;
+    // });
+    
+
+    </script>
+
+</body>
+</html>

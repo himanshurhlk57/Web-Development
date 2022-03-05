@@ -16,7 +16,7 @@ const person = [
 	{firstName: 'rohit', lastName: 'kumar'},
 	{firstName: 'rahul', lastName: 'kumar'},
 	{firstName: 'anand', lastName: 'kumar'}
-];
+]; 
 
 person.forEach((person) => {
 	console.log(person.lastName);

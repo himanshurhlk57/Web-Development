@@ -14,7 +14,20 @@ const sumUsingReduce = numbers.reduce((previous, number) => {
 	return previous + number;
 }, 4);
 
-console.log(sumUsingReduce);
+console.log(sumUsingReduce); // 4+1+2+3
+
+// maximum inside an array
+
+const numbers = [1,2,3,4];
+
+const maximum = numbers.reduce((previous, number) => {
+    if(number > previous){
+         previous = number;
+     }
+     return previous;
+}, numbers[0]);
+
+console.log(maximum);
 
 
 // reduce on two different array
