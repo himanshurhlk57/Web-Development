@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .label label {
+                padding-right: 170px;
+            }
+            .input input {
+                padding: 8px;
+                margin-right: 10px;
+            }
+            .convert-btn {
+                margin-top: 10px;
+                width: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>RGB to HEX Color Converter</h3>
+        <section>
+            <div class="label">
+                <label for="red">Red</label>
+                <label for="green">Green</label>
+                <label for="blue">Blue</label>
+            </div>
+
+            <div class="input">
+                <input id="red" type="text" placeholder="255" />
+
+                <input id="green" type="text" placeholder="255" />
+
+                <input id="blue" type="text" placeholder="255" />
+            </div>
+
+            <div class="convert-btn">
+                <button id="convert-button">Convert to Hex</button>
+                <input id="hex-value" type="text" placeholder="HEX Value" />
+            </div>
+        </section>
+        <script src="/Projects/Utility App/Utility/RgbHex/index.js"></script>
+    </body>
+</html>
