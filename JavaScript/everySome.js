@@ -25,5 +25,5 @@ let some = persons.some((person) => {
 
 console.log(some); //true
 
-// some of the person in the persons array ahs age greater than 18 so the condition is true.
+// some of the person in the persons array has age greater than 18 so the condition is true.
 // If we have the logic age>=40 it will return false because no one has age greater than 40
