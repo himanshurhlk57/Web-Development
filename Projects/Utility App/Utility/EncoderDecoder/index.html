@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Projects/Utility App/Utility/styles.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/Projects/Utility App/Utility/EncoderDecoder/styles.css" />
 
-    <title>Utility App</title>
-</head>
-<body>
+        <title>Utility App</title>
+    </head>
+    <body>
+        <main class="header">
+            <h2 class="heading">URL ENCODE DECODE</h2>
+            <h3 class="sub-heading">Encode & Decode an URL</h3>
+        </main>
+        <section class="text-area">
+            <textarea id="input-field" type="text" cols="60" rows="15" placeholder="Enter Input"></textarea>
 
-    <section>
-        <div class="content">
-            <input type="text" id="input-field">
-            <div class="buttons">
-                <button class="btn" id="btn-encode">Encode</button>
-                <button class="btn" id="btn-decode">Decode</button>
-            </div>
-            <label for="output">Result:</label>
-            <input type="text" id="output">
-        </div>
-    </section>
+            <textarea type="text" id="output" cols="60" rows="15" placeholder="Output"></textarea>
+            <button class="btn" id="btn-encode">Encode</button>
+            <button class="btn" id="btn-decode">Decode</button>
+        </section>
 
-
-    <script src="./index.js"></script>
-</body>
+        <script src="./index.js"></script>
+    </body>
 </html>
