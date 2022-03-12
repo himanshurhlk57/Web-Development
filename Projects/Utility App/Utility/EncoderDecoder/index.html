@@ -9,17 +9,47 @@
         <title>Utility App</title>
     </head>
     <body>
-        <main class="header">
-            <h2 class="heading">URL ENCODE DECODE</h2>
-            <h3 class="sub-heading">Encode & Decode an URL</h3>
-        </main>
-        <section class="text-area">
-            <textarea id="input-field" type="text" cols="60" rows="15" placeholder="Enter Input"></textarea>
+        <header>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <img class="dropdown-img" src="./img/icons8-hamburger-64.png" alt="" />
+                    <div class="content">
+                        <a href="">RGB/HEX Converter</a>
+                        <a href="">Timestamp Converter</a>
+                        <a href="">Unit Converters</a>
+                        <a href="">Number Base Converters</a>
+                        <a href="">Text Tools/String Utilities</a>
+                    </div>
+                </div>
 
-            <textarea type="text" id="output" cols="60" rows="15" placeholder="Output"></textarea>
-            <button class="btn" id="btn-encode">Encode</button>
-            <button class="btn" id="btn-decode">Decode</button>
-        </section>
+                <div class="app-heading">
+                   <a href="/Projects/Utility App/Utility/index.html">Utility App</a>
+                </div>
+
+                <div class="dropdown">
+                    Encoders/Decoders
+                    <div class="content">
+                        <a href="">Base64 Encode</a>
+                        <a href="">Base64 Decode</a>
+                        <a href="">Url Encode Decode</a>
+                        <a href="">MD5 Hash</a>
+                        <a href="">SHA-1 Hash</a>
+                        <a href="">SHA-256 Hash</a>
+                        <a href="">SHA-512 Hash</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="text-area">
+                <textarea id="input-field" type="text" placeholder="Enter Input"></textarea>
+                <textarea type="text" id="output" placeholder="Output"></textarea>
+            </div>
+            <div class="button">
+                <button class="btn-encode">Encode</button>
+                <button class="btn-decode">Decode</button>
+            </div>
+        </main>
 
         <script src="./index.js"></script>
     </body>

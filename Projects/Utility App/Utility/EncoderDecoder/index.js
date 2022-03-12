@@ -1,6 +1,6 @@
 const inputField = document.querySelector('#input-field');
-const encodeButton = document.querySelector('#btn-encode');
-const decodeButton = document.querySelector('#btn-decode');
+const encodeButton = document.querySelector('.btn-encode');
+const decodeButton = document.querySelector('.btn-decode');
 const result = document.querySelector('#output');
 
 

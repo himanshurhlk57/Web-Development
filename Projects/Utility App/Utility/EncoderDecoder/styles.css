@@ -1,26 +1,113 @@
-html{
-    font-size: 62.5%;
-}
-
 * {
     margin: 0;
     box-sizing: border-box;
-}
-.header {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    background-color: #203239;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    
+    color: #555555;
 }
 
-.text-area{
-    margin: 20px;
-    /* width: 50%; */
+a{
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: antiquewhite;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: sticky;
+}
+.dropdown .app-heading{
+    cursor: pointer;
+}
+.content {
+    position: absolute;
+    display: none;
+}
+
+.text-area {
+    /* position: relative; */
+    margin: 40px 40px 0px 40px;
+    display: grid;
+    gap: 20px;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    justify-items: center;
+}
+
+textarea {
+    padding: 13px;
+    border-radius: 5px;
+    width: 400px;
+    height: 300px;
+}
+
+@media (max-width: 878px) {
+    .text-area {
+        grid-template-columns: 1fr;
+    }
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-encode {
+    margin-right: 20px;
+}
+
+.btn-encode {
+    width: 100px;
+    background-color: #276ef1;
+    font-size: 16px;
+    line-height: 1.4rem;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+.btn-decode {
+    width: 100px;
+    background-color: rgb(224, 24, 24);
+    font-size: 16px;
+    line-height: 1.4rem;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+
+
+.app-heading{
+    font-size: 1.6rem;
+}
+
+.dropdown{
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.dropdown, .app-heading{
+    cursor: pointer;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.content a{
+    display: block;
+    text-decoration: none;
+}
+
+.content a:hover{
+    color: #276ef1;
+    background: wheat;
+}
+
+.dropdown-img{
+    width: 50px;
 }
