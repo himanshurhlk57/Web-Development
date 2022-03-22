@@ -62,6 +62,9 @@ textarea {
     .dropdown{
         font-size: 1rem;
     }
+    .btnTypeFour{
+        margin-top: 10px;
+    }
 
 }
 
@@ -71,13 +74,18 @@ textarea {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    flex-wrap:wrap;
+    
 }
 
-.btn-encode {
-    margin-right: 20px;
+.btnTypeOne {
+    margin-right: 10px;
+}
+.btnTypeTwo, .btnTypeThree{
+    margin-right: 10px;
 }
 
-.btn-encode {
+.md5, .sha-256{
     width: 100px;
     background-color: #276ef1;
     font-size: 16px;
@@ -89,7 +97,7 @@ textarea {
     color: white;
 }
 
-.btn-decode {
+.sha-1, .sha-512 {
     width: 100px;
     background-color: rgb(224, 24, 24);
     font-size: 16px;

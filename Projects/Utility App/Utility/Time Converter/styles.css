@@ -31,23 +31,9 @@ h2{
     display: none;
 }
 
-.text-area {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    column-gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    row-gap: 20px;
-
-    
-}
 
 
-textarea {
-    padding: 13px;
-    border-radius: 5px;
-}
+
 
 .dropdown{
     position: relative;
@@ -65,19 +51,43 @@ textarea {
 
 }
 
+main{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main :nth-child(1){
+    margin-bottom: 15px;
+}
+main :nth-child(2){
+    margin-bottom: 15px;
+}
+
+label{
+    margin: 10px;
+    font-size: 1.25rem;
+}
+
+h3{
+    margin-bottom: 15px;
+}
+input{
+    padding: 4.5px;
+}
 
 .button {
-    display: flex;
-    justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.btn-encode {
+.convert {
     margin-right: 20px;
 }
 
-.btn-encode {
+.convert {
     width: 100px;
     background-color: #276ef1;
     font-size: 16px;
@@ -89,7 +99,7 @@ textarea {
     color: white;
 }
 
-.btn-decode {
+.reset {
     width: 100px;
     background-color: rgb(224, 24, 24);
     font-size: 16px;
@@ -132,4 +142,10 @@ textarea {
 
 .dropdown-img{
     width: 50px;
+}
+
+.color-box{
+    width: 250px;
+    height: 200px;
+    border: 1px solid black;
 }

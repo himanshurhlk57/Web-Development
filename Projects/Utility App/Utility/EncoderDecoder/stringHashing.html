@@ -4,9 +4,11 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./stringHashing.css" />
 
-        <title>Encoders/Decoders</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+        <title>String Hashing</title>
     </head>
     <body>
         <header>
@@ -14,7 +16,7 @@
                 <div class="dropdown">
                     <img class="dropdown-img" src="./img/icons8-hamburger-64.png" alt="" />
                     <div class="content">
-                        <a href="../Color Converter/index.html">Color Converter</a>
+                        <a href="">Color Converter</a>
                         <a href="">Timestamp Converter</a>
                         <a href="">Unit Converters</a>
                         <a href="">Base Converters</a>
@@ -27,16 +29,16 @@
                 </div>
 
                 <div class="dropdown">
-                    Encoders/Decoders
+                    String Hashing
                     <div class="content">
-                        <a href="#">URL Encode Decode</a>
-                        <a href="./stringHashing.html">String Hashing</a>
+                        <a href="./index.html">URL Encode Decode</a>
+                        <a href="#"> String Hashing</a>
                         <a href="./base64.html">Base64 Encode/Decode</a>
                     </div>
                 </div>
             </nav>
 
-            <h2>URL Encode Decode - URL Percent Encoding and Decoding.</h2>
+            <h2>String Hashing</h2>
         </header>
 
         <main>
@@ -45,11 +47,13 @@
                 <textarea type="text" id="output" placeholder="Output" rows="16" cols="41"></textarea>
             </div>
             <div class="button">
-                <button class="btn-encode">Encode</button>
-                <button class="btn-decode">Decode</button>
+                <button class="md5 btnTypeOne">MD5</button>
+                <button class="sha-1 btnTypeTwo">SHA-1</button>
+                <button class="sha-256 btnTypeThree">SHA-256</button>
+                <button class="sha-512 btnTypeFour">SHA-512</button>
             </div>
         </main>
 
-        <script src="./index.js"></script>
+        <script src="./stringHashing.js"></script>
     </body>
 </html>

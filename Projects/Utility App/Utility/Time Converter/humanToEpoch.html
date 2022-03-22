@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Color Converter</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <img class="dropdown-img" src="../EncoderDecoder/img/icons8-hamburger-64.png" alt="" />
+                    <div class="content">
+                        <a href="../EncoderDecoder/index.html">Encoder/Decoder</a>
+                        <a href="">Timestamp Converter</a>
+                        <a href="">Unit Converters</a>
+                        <a href="">Base Converters</a>
+                        <a href="">String Utilities</a>
+                    </div>
+                </div>
+
+                <div class="app-heading">
+                    <a href="/index.html">Utility App</a>
+                </div>
+
+                <div class="dropdown">
+                    Color Converters
+                    <div class="content">
+                        <a href="./index.html">RGB to HEX</a>
+                        <a href="./hextToRgb.html">HEX to RGB</a>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>RGB-HEX Converter</h2>
+        </header>
+
+        <main class="main">
+            <div>
+                <label for="red-input">Red Value:</label>
+                <input type="number" name="" id="red-input" placeholder="0-255" />
+            </div>
+            <div>
+                <label for="green-input">Green Value:</label>
+                <input type="number" name="" id="green-input" placeholder="0-255" />
+            </div>
+            <div>
+                <label for="blue-input">Blue Value:</label>
+                <input type="number" name="" id="blue-input" placeholder="0-255" />
+            </div>
+            <div class="button">
+                <button class="convert">Convert</button>
+                <button class="reset">Reset</button>
+            </div>
+            <div>
+                <label for="hex-output">HEX Value:</label>
+                <input type="text" name="" id="hex-output" placeholder="#000000" />
+            </div>
+
+            <h3>Output Color:</h3>
+            <!-- <textarea name="" id="" cols="35" rows="10"></textarea> -->
+            <div class="color-box">
+            </div>
+        </main>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

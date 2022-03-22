@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Rating</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        color: rgb(13, 109, 112);
+      }
+      .star-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        height: 200px;
+        box-shadow: 3px 3px 3px rgb(0 0 0 / 10%), -1px -1px 2px rgb(0 0 0 / 8%);
+      }
+      .star {
+        font-size: 100px;
+        color: gray;
+      }
+      .star:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Star Rating</h1>
+      <div class="star-container">
+        <div class="star">&starf;</div>
+        <div class="star">&starf;</div>
+        <div class="star">&starf;</div>
+        <div class="star">&starf;</div>
+        <div class="star">&starf;</div>
+      </div>
+    </main>
+
+    <script src="./starRating.js"></script>
+  </body>
+</html>

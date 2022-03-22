@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Color Converter</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="dropdown">
+                    <img class="dropdown-img" src="../EncoderDecoder/img/icons8-hamburger-64.png" alt="" />
+                    <div class="content">
+                        <a href="../EncoderDecoder/index.html">Encoder/Decoder</a>
+                        <a href="">Timestamp Converter</a>
+                        <a href="">Unit Converters</a>
+                        <a href="">Base Converters</a>
+                        <a href="">String Utilities</a>
+                    </div>
+                </div>
+
+                <div class="app-heading">
+                    <a href="/index.html">Utility App</a>
+                </div>
+
+                <div class="dropdown">
+                    Time Converters
+                    <div class="content">
+                        <a href="./epochToHuman.html">Epoch to Human</a>
+                        <a href="./humanToEpoch.html">Human to Epoch</a>
+                    </div>
+                </div>
+            </nav>
+
+            <h2>Epoch to Human time Converter</h2>
+        </header>
+
+        <main class="main">
+            <div>
+                <label for="red-input">Epoch:</label>
+                <input type="number" name="" id="epoch-input" placeholder="1647540368" />
+            </div>
+            <div class="button">
+                <button class="convert">Convert</button>
+                <button class="reset">Reset</button>
+            </div>
+            <div>
+                <label for="year-input">Year:</label>
+                <input type="number" name="" id="year-input" placeholder="yyyy" />
+            </div>
+            <div>
+                <label for="month-input">Month:</label>
+                <input type="number" name="" id="month-input" placeholder="mm" />
+            </div>
+            <div>
+                <label for="date-output">Date:</label>
+                <input type="text" name="" id="date-output" placeholder="dd" />
+            </div>
+            <div>
+                <label for="hour-output">Hour:</label>
+                <input type="text" name="" id="hour-output" placeholder="hh" />
+            </div>
+            <div>
+                <label for="minutes-output">Minutes:</label>
+                <input type="text" name="" id="minutes-output" placeholder="mm" />
+            </div>
+            <div>
+                <label for="Second-output">Second:</label>
+                <input type="text" name="" id="Second-output" placeholder="ss" />
+            </div>
+        </main>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
