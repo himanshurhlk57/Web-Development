@@ -1,0 +1,33 @@
+In node we get access to the global object with several different methods
+and properties attached to it that we can use out of the box
+
+Window object inside the browser is the browser's global object 
+
+In node our global object is not window but global and that represents
+the global context in a node environment
+
+console.log(global)
+
+global.setTimeout(() => {
+    console.log('In the timeout)
+}, 3000)
+
+setTimeout(() => {
+    console.log('In the timeout)
+    clearInterval(int);
+}, 3000)
+
+const int = setInterval(() => {
+    console.log('In the interval)
+}, 1000)
+
+
+console.log(__dirname) Absolute path of the current folder that this file is in
+output :- 
+C:\Users\Himanshu Kumar\OneDrive\Desktop\Development\NodeJsNetNinja
+
+console.log(__filename) Absolute path of the folder with the file name added as well
+output :-
+C:\Users\Himanshu Kumar\OneDrive\Desktop\Development\NodeJsNetNinja\global.js
+
+

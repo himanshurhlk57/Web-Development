@@ -1,0 +1,15 @@
+npm install ejs
+
+EJS templates are processed through the ejs view engine on 
+the server
+
+our view file live on the server and when we want to render one to the browser then that view file is passed into view engine the ejs view engine to be processed now the engine looks for any kind of dynamic content variables
+loops conditional etc then whenever it find those it figures out the resulting html code for those part and in the end it spits out a valid html page based on the template we wrote and then the html page with the resulting data inside it will be returned to the browser this whole process is called server side rendering
+
+EJS             Server              HTML
+<p>
+<%= title %>    EJS                 <p>
+</p>            view engine        Ninja Blog
+                                    </p>
+
+This whole procsess is called server side rendering

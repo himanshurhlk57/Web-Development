@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 
 html{
     font-size: 62.5%;
@@ -13,40 +13,32 @@ a{
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif, sans-serif;
-    color: rgb(77, 80, 83);
-}
-
-nav{
-    background-color: antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 
-.nav-links{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.nav-links li{ 
-    padding: 15px;
-}
-
-.nav-links li a{
-    font-weight: 500;
-    color: #02181d;
-    font-size: 1.8rem;
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-}
-.nav-links li a:hover{
-    color: #276ef1;
+header{
+    text-align: center;
+    position: relative;
+    font-size: large;
+    height: 70px;
+    /* box-shadow: 0 2px 2px 2px rgba(0,0,0,.2); */
+    box-shadow: 0 2px 2px 2px #9ADCFF;
 }
 
 
+h1{
+    text-align: center;
+    padding-top: 15px;
+    color: #12343b;
+} 
 
-
+.img{
+    margin-top: 10px;
+    width: 90%;
+    height: 210px;
+  
+}
 
 .container{
     display: grid;
@@ -54,14 +46,13 @@ nav{
     row-gap: 50px;
     justify-items: center;
     align-items: center;
-   
 } 
 
 .item{
     position: relative;
     font-size: medium;
     margin-top: 40px;
-    box-shadow: 1px 2px 3px 2px rgb(87, 16, 16);
+    box-shadow: 1px 2px 3px 3px rgb(43, 99, 151);
     text-align: center;
     width: 250px;
     height: 250px;
@@ -84,14 +75,29 @@ nav{
 }
 
 .item .text{
+    font-weight: 550;
+    color: #12343b;
     position: absolute;
     bottom: 5px;
     left: 50px;
 }
 
 .footer{
-    margin-top: 20px;
-    background-color: #12343b;
-    width: 100%;
+    padding: 15px;
+    background-color: #61A4BC; 
+    text-align: center;
+    margin-top: 40px;
     height: 100px;
 }
+
+.icons{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    margin-right: 10px;
+    width: 35px;
+}
+

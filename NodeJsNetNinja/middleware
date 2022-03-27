@@ -1,0 +1,20 @@
+Name for the code which runs on the server between getting a
+request and sending a response
+
+the use method is genearlly used to run some middleware code
+
+app.use(func),  app.get('/', func)
+
+
+middleware examples ->
+
+logger middleware to log details of every request
+authentication check middleware for protected routes
+middleware to parse json data from request
+return 404 pages
+
+there are tones of middleware function aready created
+for us to use
+
+
+server protects all of our file automaticaly from usage in a browser
