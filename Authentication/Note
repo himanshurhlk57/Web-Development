@@ -1,0 +1,48 @@
+Authentication Routes
+
+Using an MVC (model, view & controller) approach
+
+Auth Routes
+/signup  get  sign up page  // return us the signup form in which we will add the form details
+/login   get  log in page
+/signup  post create a new user in db // post request to submit signup form detail to the database
+/login   post authenticate a current user  //post request to authenticate a current user after they fill up in the login 
+page press submit that sends a post request to the server to take those login detail check them against those stored in the
+  database and then logged them in 
+/logout  get  log a user out
+
+if we send a post request from a browser its normally after a user submitted some kind of form
+so when they click on submit a post request is send to the server but they also send with that 
+post request the data they entered in the form username or email
+
+json data ->
+
+{
+    "email": 'himani@supii.com',
+    "password": 'kyubataye'
+}
+
+//middleware
+app.use(express.json());
+
+takes any json data that comes along with a request parses into 
+a javascript object for us so we can use it inside the code
+
+create a new schema 
+
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+    email: {
+        type: String,
+        required: true
+        unique: true
+    },
+    password: {
+        type: String,
+        required: true,
+        minLength: 6,
+    },
+})
+
+const user = mongoose.model('user', userSchema)

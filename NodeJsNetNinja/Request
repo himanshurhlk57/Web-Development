@@ -1,0 +1,20 @@
+This type of requests are typically to get a resource from the
+server whether that be JSON data from the database or webpage
+
+GET -> To get data from the server, requests to get a resource
+POST -> requests to create a new data (e.g new blog)
+DELETE -> requests to delete data (e.g delete a blog)
+PUT -> requests to update exisit ng data (e.g update a blog)
+
+when we have a web form and when we submit then we send a post 
+request to the server with that new data and it can be added to the
+database
+
+we can use same routes for different type of request
+different request can be handled differently from each other on the server
+
+
+<form action='/blogs' method="POST">
+<label for='title'>Blog Title:</label>
+<input type='text' id='title' name='title' require>
+<button>Submit<button/>

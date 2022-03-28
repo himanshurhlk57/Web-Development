@@ -31,6 +31,10 @@ app.use((req, res, next) => {
   next();
 });
 
+
+// middleware & static files
+app.use(express.static('public'))
+
 app.get("/", (req, res) => {
   res.render("index", { title: "Home" });
 });

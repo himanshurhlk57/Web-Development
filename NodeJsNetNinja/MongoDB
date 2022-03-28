@@ -1,0 +1,47 @@
+NoSql data make use of collection and documents
+
+NoSql databases are split in collection(more like table in sql databases)
+
+Each collection can be use to store a particular type of data
+
+So the blog collection will only store blog document
+
+Each collection should contain only one type of document
+
+document represent single item of data
+
+From our code we can connect to a collection like a blogs in the
+mongodb so we can either save update delete documents inside it
+
+Mongoose
+
+Mongoose is an ODM library - Object Document Mapping library
+
+Mongoose -
+user model -> User.get(), User.findById()
+Blog model -> Blog.deleteOne()
+
+The way we generally work with monogDB and mongoose is to create schemas and models 
+
+Schemas -> Defines the structure of a type of data/document properties & property types
+
+
+user schema:                      Blog schema
+name(String), required            title(string), required
+age(number)                       ...
+bio(String), required              ..
+
+Models -> Allow us to communicate with database collections
+
+Blog Schema -> get, save, delete, etc  -> Database Blog Collection
+
+npm install mongoose
+
+Blogs - collection, 
+
+We're using the model to create a new instance of a blog document withing the code and in here we pass an object with the different properties of this blog,
+Inside our schema each blog have a title which is a string a snippet which is a string and also a body which is a string
+we dont have to pass this mongoose automatically takes care of the timestamps for us 
+
+underthe hood mongoose is gonna say okay we have used the blog model therefore i am going to look for blogs collection
+based on this name and
