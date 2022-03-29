@@ -1,0 +1,6 @@
+Authentication & Authorization
+
+Authentication -> Is the process of identifying if the user who they claim they are.
+
+Authorization -> Determining if the user has right permission to perform the given operation.
+
