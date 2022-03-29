@@ -1,6 +1,12 @@
 Authentication & Authorization
 
 Authentication -> Is the process of identifying if the user who they claim they are.
+taking an username and password and authenticating them to make sure the username and password is correct
+is like loggin a user in
 
 Authorization -> Determining if the user has right permission to perform the given operation.
+makes sure that the user that send request to the server is the same user that actually logged in 
+during authentication process. Its authorizing that this user has access to this particular system
+
+JWT instead of using the cookies it uses a json web token to do the authorization
 
