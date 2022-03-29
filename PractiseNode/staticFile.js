@@ -20,3 +20,16 @@ app.use(express.static("public"));
 app.get("/about", (req, res) => {
   res.sendFile("./public/about.html", { root: __dirname });
 });
+
+in the above function we get access to next also 
+
+here i am not returning any responsing now i want to to give the /user response to other app method i need to 
+to next
+app.all("/users", (req, res, next) => {
+  console.log('data retrived;);
+  next();
+});
+
+app.get("/users", (req, res) => {
+  res.send('data retrived done');
+});
