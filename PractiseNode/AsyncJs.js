@@ -63,6 +63,21 @@ function login() {
 
 register().then(sendEmail).then(login);
 
+// error handling
+
+function login() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+     return reject('Error while login);
+      console.log("User Logined");
+    }, 2000);
+  });
+}
+
+register().then(sendEmail).then(login).catch((err) => {
+  console.log('Error: ', err)
+});
+
 console.log("other application work");
 
 // 3 -> Async Await
@@ -100,6 +115,26 @@ async function authenticate() {
   await login();
 }
 
-authenticate();
+authenticate().then(() => {
+  console.log('All set!');
+});
+
+// error handling
+
+
+function login() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+     return reject('Error while login);
+      console.log("User Logined");
+    }, 2000);
+  });
+}
+
+authenticate().then(() => {
+  console.log('All set!');
+}).catch((err) => {
+  console.log(err);
+});
 
 console.log("other application work");
