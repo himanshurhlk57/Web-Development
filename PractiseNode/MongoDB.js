@@ -132,6 +132,20 @@ app.get('/blogs', (req, res) => {
 
 
 
+Model
+Models are classes compiled from Schema definitions. An instance of a model is called a document.
+
+Models are responsible for creating and reading documents from the underlying MongoDB database.
+
+Creating a model is pretty easy once we have the schema.
+
+const Blog = mongoose.model('Blog', blogSchema);
+The first argument is the singular name of the collection your model is for.
+Mongoose automatically looks for the plural, lowercased version of your model name.
+Thus, for the example above, the model Blog is for the blogs collection in the database.
+
+We can now use the above model to create a Document object like this:
+
 
 
 
