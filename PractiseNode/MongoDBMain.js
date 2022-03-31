@@ -76,6 +76,21 @@ app.get('/blogs', (req, res) => {
 })
 
 
+const express = require("express");
+const mongoose = require("mongoose");
+const url = "mongodb://localhost/Himanshu";
+
+const app = express();
+
+mongoose.connect(url, { useNewUrlParser: true });
+const con = mongoose.connection;
+
+con.on("open",  () => {
+  console.log("connected to db");
+});
+
+
+
 Model
 Models are classes compiled from Schema definitions. An instance of a model is called a document.
 Models are responsible for creating and reading documents from the underlying MongoDB database.
