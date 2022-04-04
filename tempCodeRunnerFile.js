@@ -1,0 +1,3 @@
+register();
+sendEmail();
+login();
